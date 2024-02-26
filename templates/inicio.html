@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | {{usuario}}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        #titulo {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+</head>
+<body>
+    <nav class="h-24 bg-pink-400 w-full fixed">
+        <div class="flex justify-center items-center">
+            <div class="flex auto justify-center items-center">
+                <h1 id="titulo" class="ml-5 text-[60px] text-black text-center font-bold select-none">Glamour and Look
+                </h1>
+            </div>
+            <div class="flex-auto">
+
+            </div>
+            <div class="flex flex-col items-center justify-center w-80">
+                <h1 class="font-bold">{{usuario}}</h1>
+                <h1>{{nombres}}</h1>
+                <h1>{{apellidos}}</h1>
+            </div>
+        </div>
+    </nav>
+    <div class="h-24"></div>
+    <h1>Calendario de Citas de Estilismo Mes: {{month}}</h1>
+    <table class="text-center border" border="1">
+        <tr class="">
+            <th class="w-24 bg-gray-500/50 uppercase border">Lunes</th>
+            <th class="w-24 bg-gray-500/50 uppercase border">Martes</th>
+            <th class="w-24 bg-gray-500/50 uppercase border">Miércoles</th>
+            <th class="w-24 bg-gray-500/50 uppercase border">Jueves</th>
+            <th class="w-24 bg-gray-500/50 uppercase border">Viernes</th>
+            <th class="w-24 bg-gray-500/50 uppercase border">Sábado</th>
+            <th class="w-24 bg-gray-500/50 uppercase border">Domingo</th>
+        </tr>
+        {% for week in weeks %}
+        <tr>
+            {% for day in week %}
+            <td class="border h-24 w-32">
+                {{ day.numero }}
+                {% if day.horario %}
+                <div class="border-l-8 border-violet-950 bg-violet-400/50 p-1 rounded text-violet-800">{{ day.horario }}</div>
+                {% endif %}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

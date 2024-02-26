@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        #titulo {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="h-24 bg-pink-400 w-full fixed">
+        <div class="flex justify-center items-center">
+            <div class="flex auto justify-center items-center">
+                <h1 id="titulo" class="ml-5 text-[60px] text-black text-center font-bold select-none">Glamour and Look
+                </h1>
+            </div>
+            <div class="flex-auto">
+
+            </div>
+            <div class="flex items-center justify-center w-80">
+            </div>
+        </div>
+    </nav>
+    
+    <div class="flex justify-center items-center h-screen">
+        <form action="/login" method="post" class="fixed border rounded-xl p-10">
+            <div class="flex flex-col">
+                <h1 class="text-center text-3xl font-bold">Iniciar Sesion</h1>
+                <label for="usuario" class="text-xl mt-10">Usuario:</label>
+                <input class="border-2 border-pink-600 rounded-xl h-[35px] p-2 w-64 mt-2" type="text" name="usuario" id="usuario" required >
+                <label for="password" class="text-xl mt-6">Contraseña:</label>
+                <input class="border-2 border-pink-600 rounded-xl h-[35px] p-2 w-64 mt-2" type="password" id="password" name="password" required >
+            </div>
+            <button class="px-4 py-2 bg-pink-400 rounded-full text-white hover:text-black hover:font-bold mt-4 " type="submit">Iniciar Sesion</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
