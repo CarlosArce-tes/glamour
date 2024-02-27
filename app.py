@@ -43,31 +43,8 @@ def inicio():
         telefono = session['telefono']
     else:
         return redirect(url_for('login'))
-    
-    import datetime
-    citas = [
-    {'fecha': (2024, 2, 26), 'horario': '9:00 - 12:00'},
-    # Agrega aquí más citas si es necesario
-    ]
-    now = datetime.datetime.now()
-    year = now.year
-    month = now.month
-    cal = monthcalendar(year, month)
-    weeks = []
-    for week in cal:
-        days = []
-        for day in week:
-            if day == 0:
-                days.append({'numero': '', 'horario': ''})
-            else:
-                citas_dia = [cita for cita in citas if cita['fecha'] == (year, month, day)]
-                if citas_dia:
-                    days.append({'numero': day, 'horario': citas_dia[0]['horario']})
-                else:
-                    days.append({'numero': day, 'horario': ''})
-        weeks.append(days)
 
-    return render_template('inicio.html', usuario=usuario, nombres=nombres, apellidos=apellidos, telefono=telefono, weeks=weeks, month=month)
+    return render_template('inicio.html', usuario=usuario, nombres=nombres, apellidos=apellidos, telefono=telefono)
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
 
