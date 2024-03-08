@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
         }
     </style>
 </head>
+
 <body>
     <nav class="h-24 bg-[#b4ffe6] w-full fixed">
         <div class="flex justify-center items-center">
@@ -26,7 +28,9 @@
             </div>
             <div class="flex flex-row items-center justify-center w-80">
                 <h1 class="font-bold">{{usuario}}</h1>
-                <a href="{{ url_for('logout' ) }}" class="px-3 py-2 bg-[#e6f6ff] hover:font-bold hover:text-blue-600 rounded-xl hover:border-4 hover:border-emerald-500 ms-4">Cerrar Sesion</a>
+                <a href="{{ url_for('logout' ) }}"
+                    class="px-3 py-2 bg-[#e6f6ff] hover:font-bold hover:text-blue-600 rounded-xl hover:border-4 hover:border-emerald-500 ms-4">Cerrar
+                    Sesion</a>
             </div>
         </div>
     </nav>
@@ -40,4 +44,5 @@
         </div>
     </div>
 </body>
+
 </html>

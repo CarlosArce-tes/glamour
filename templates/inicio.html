@@ -15,45 +15,45 @@
     </style>
 </head>
 <body>
-    <nav class="h-24 bg-[#b4ffe6] w-full fixed">
+    <nav class="fixed bg-[#b4ffe6] w-full h-24">
         <div class="flex justify-center items-center">
-            <div class="flex auto justify-center items-center">
-                <h1 id="titulo" class="ml-5 text-[60px] text-black text-center font-bold select-none">Glamour & Look
+            <div class="flex justify-center items-center auto">
+                <h1 id="titulo" class="ml-5 font-bold text-[60px] text-black text-center select-none">Glamour & Look
                 </h1>
             </div>
             <div class="flex-auto">
 
             </div>
-            <div class="flex flex-row items-center justify-center w-80">
+            <div class="flex flex-row justify-center items-center w-80">
                 <h1 class="font-bold">{{usuario}}</h1>
-                <a href="{{ url_for('logout' ) }}" class="px-3 py-2 bg-[#e6f6ff] hover:font-bold hover:text-blue-600 rounded-xl hover:border-4 hover:border-emerald-500 ms-4">Cerrar Sesion</a>
+                <a href="{{ url_for('logout' ) }}" class="hover:border-4 hover:border-emerald-500 bg-[#e6f6ff] px-3 py-2 rounded-xl hover:font-bold hover:text-blue-600 ms-4">Cerrar Sesion</a>
             </div>
         </div>
     </nav>
     <div class="h-24"></div>
-    <div class=" scroll-auto flex flex-row items-center justify-center h-14 backdrop-blur-3xl bg-rose-200 m-10 rounded-xl shadow-xl shadow-black/20">
-        <a class="m-1 uppercase font-bold text-sm px-3 py-2 rounded hover:border-b-4 border-pink-500" href="">Uñas</a>
+    <div class="flex flex-row justify-center items-center bg-rose-200 shadow-black/20 shadow-xl backdrop-blur-3xl m-10 rounded-xl h-14 scroll-auto">
+        <a class="border-pink-500 m-1 px-3 py-2 hover:border-b-4 rounded font-bold text-sm uppercase" href="">Uñas</a>
         
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Peinados</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Maquillaje</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Paquetes</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Pestañas</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Tintes y Efectos</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Cortes</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Cejas</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Permanentes</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded border-r" href="">Faciales</a>
-        <a class="m-1 uppercase font-bold text-sm rounded hover:border-b-4 border-pink-500 px-3 py-2 rounded" href="">Productos</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Presupuestos</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Inventario</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="">Citas</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded border-r" href="">Facturas</a>
-        <a class="m-1 uppercase font-bold text-sm hover:bg-gray-400/60 px-3 py-2 rounded" href="{{ url_for('perfil' ) }}">Perfil</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Peinados</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Maquillaje</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Paquetes</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Pestañas</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Tintes y Efectos</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Cortes</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Cejas</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Permanentes</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 border-r rounded font-bold text-sm uppercase" href="">Faciales</a>
+        <a class="border-pink-500 m-1 px-3 py-2 hover:border-b-4 rounded rounded font-bold text-sm uppercase" href="">Productos</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Presupuestos</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Inventario</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="">Citas</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 border-r rounded font-bold text-sm uppercase" href="">Facturas</a>
+        <a class="hover:bg-gray-400/60 m-1 px-3 py-2 rounded font-bold text-sm uppercase" href="{{ url_for('perfil' ) }}">Perfil</a>
     </div>
 
-    <div class="flex flex-row items-center justify-center ">
-        <img src="/static/mujer-hermosa-joven-flores-junto-cara.jpg" class="rounded-xl mr-20 w-[1000px] h-[600px]">
-        <p class="text-gray-600 w-96 text-center text-2xl ">Te ofrecemos mucho más que un cambio de imagen. Es un lugar donde puedes relajarte y dejarte consentir mientras nuestro equipo trabaja para realzar tu belleza natural y resaltar tu estilo único. Ven y descubre una experiencia de belleza que te hará sentir renovada y radiante
+    <div class="flex flex-row justify-center items-center">
+        <img src="/static/page/mujer-hermosa-joven-flores-junto-cara.jpg" class="mr-20 rounded-xl w-[1000px] h-[600px]">
+        <p class="w-96 text-2xl text-center text-gray-600">Te ofrecemos mucho más que un cambio de imagen. Es un lugar donde puedes relajarte y dejarte consentir mientras nuestro equipo trabaja para realzar tu belleza natural y resaltar tu estilo único. Ven y descubre una experiencia de belleza que te hará sentir renovada y radiante
     </div>
 </body>
 </html>
