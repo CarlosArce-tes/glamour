@@ -17,31 +17,33 @@
 </head>
 
 <body>
-    <nav class="h-24 bg-[#b4ffe6] w-full fixed">
+    <nav class="fixed bg-[#b4ffe6] w-full h-24">
         <div class="flex justify-center items-center">
-            <div class="flex auto justify-center items-center">
-                <h1 id="titulo" class="ml-5 text-[60px] text-black text-center font-bold select-none">Glamour & Look
+            <div class="flex justify-center items-center auto">
+                <h1 id="titulo" class="ml-5 font-bold text-[60px] text-black text-center select-none">Glamour & Look
                 </h1>
             </div>
             <div class="flex-auto">
 
             </div>
-            <div class="flex flex-row items-center justify-center w-80">
+            <div class="flex flex-row justify-center items-center w-80">
                 <h1 class="font-bold">{{usuario}}</h1>
                 <a href="{{ url_for('logout' ) }}"
-                    class="px-3 py-2 bg-[#e6f6ff] hover:font-bold hover:text-blue-600 rounded-xl hover:border-4 hover:border-emerald-500 ms-4">Cerrar
+                    class="hover:border-4 hover:border-emerald-500 bg-[#e6f6ff] px-3 py-2 rounded-xl hover:font-bold hover:text-blue-600 ms-4">Cerrar
                     Sesion</a>
             </div>
         </div>
     </nav>
     <div class="h-24"></div>
-    <div class="flex flex-col justify-center items-center m-20">
-        <div class="border p-40 ">
-            <h1 class="text-center text-[30px] font-bold">Administrador</h1>
-            <h1>Nombres: {{nombres}}</h1>
-            <h1>Apellidos: {{apellidos}}</h1>
-            <h1>Telefono: {{telefono}}</h1>
+    <div></div>
+    <div class="flex flex-row justify-center items-start m-20">
+        <div class="border-purple-500 p-40 border border-l-8 rounded-xl">
+            <h1 class="mb-10 font-bold text-[30px] text-center">Administrador</h1>
+            <h1 class="font-bold">Nombres: <h1>{{nombres}}</h1></h1>
+            <h1 class="font-bold">Apellidos:  <h1>{{apellidos}}</h1></h1>
+            <h1 class="font-bold">Telefono:  <h1>{{telefono}}</h1></h1>
         </div>
+        <img src="/static/page/mujer-hermosa-joven-flores-junto-cara.jpg" class="m-10 rounded-xl w-[600px] h-[400px]">
     </div>
 </body>
 
